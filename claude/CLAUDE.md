@@ -1,3 +1,12 @@
+## Known Environment Issues
+- When creating or pushing PRs with `gh` CLI and TLS certificate errors occur, immediately use `--no-verify` for git push or the appropriate insecure flag for `gh`. Do not suggest macOS keychain debugging or other root-cause investigations unless explicitly asked.
+
+## Code References
+- When referencing code (explaining, discussing, or pointing to specific logic), always use clickable Markdown links with the fully qualified file path and line numbers
+- Format: `[file.go:42](file:///full/path/to/file.go:42)` or `[file.go:42-50](file:///full/path/to/file.go:42)` for ranges
+- Never use relative paths or omit line numbers when referring to specific code
+- Always use `file://` URI scheme so links are clickable in the terminal/IDE
+
 ## Give feedback
 - If you find any of my instructions too verbose/not clear enough/have gaps/mislead you, dump your feedback in .local/aifeedback and let me know. Give clear examples so that I can improve
 
@@ -33,13 +42,15 @@ All of the following shorthand communications should be strictly applied to the 
 - "aiplan" means "create a plan in .local/aitasks. consult me before coding"
 - "ainobk" means "don't worry about backward compatibility"
 - "aitt" means "use table driven style. use SetupTest, SetupSubTest, TearDownSubTest, TearDownTest. aiflw"
-- "aiprt" means "compare the current branch with main and suggest the proper PR title and a 'why' seciton. aishort"
-- "aipr" means "create a PR from the current branch. aiprt"
+- "aiprt" means "compare the current branch with main and suggest the proper PR title. follow the PR template in the repo (.github/pull_request_template.md) for the PR body. aishort"
+- "aipr" means "if in master/main, switch to a new branch. create a PR from the branch. aiprt. PR description must be written for reviewers, no conversation summaries."
+- "aiprr" means "there's already an existing PR. update it"
 - "aiflw" means "follow other examples in this repository"
 - "aixbox" means "don't be limited by what I said, think freely"
 - "aishort" means "be short and to the point"
 - "airej" means "feel free to say no"
 - "aieval" means "evaluate the statement above and let me know what you think. don't make any changes"
 - "ainote" means "jot down notes of our conversation in ./local/ainotes. update the notes after each back and forth. write notes in .md and organize by discussion topic"
+- "aisub" means "use a sub-agent to do what i said"
 
 If I typed something like "aixxx" that you don't understand, ask
