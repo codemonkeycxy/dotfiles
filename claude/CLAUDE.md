@@ -44,6 +44,7 @@ All of the following shorthand communications should be strictly applied to the 
 - "aitt" means "use table driven style. use SetupTest, SetupSubTest, TearDownSubTest, TearDownTest. aiflw"
 - "aiprt" means "compare the current branch with main and suggest the proper PR title. follow the PR template in the repo (.github/pull_request_template.md) for the PR body. aishort"
 - "aipr" means "if in master/main, switch to a new branch. create a PR from the branch. aiprt. PR description must be written for reviewers, no conversation summaries."
+- "aiprd" means "aipr but create in draft mode"
 - "aiprr" means "there's already an existing PR. update it"
 - "aiflw" means "follow other examples in this repository"
 - "aixbox" means "don't be limited by what I said, think freely"
