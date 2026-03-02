@@ -14,12 +14,6 @@
 - Look for `.local/aitasks` directory
 - Create task folder: `/<YYYY-MM-DD>/<task-name>/`
 - Always create `plan.md` with the implementation plan
-- Create additional files as needed:
-  - `checklist.md` - Work items with ✅/⬜ status
-  - `notes.md` - Research, discoveries, scratch pad
-  - `deliverables.md` - What was shipped (PRs, files changed)
-  - `feedback.md` - Post-mortem, what worked/didn't
-  - `context/` - Subfolder for reference files (specs, screenshots, code dumps)
 - Don't code anything outside of the plan doc. Consult the user before executing the plan
 
 ### Task Status
@@ -39,7 +33,7 @@ All of the following shorthand communications should be strictly applied to the 
 - "airec" means "don't make any changes yet, just give me your recommendations"
 - "aiask" means "do what i just asked but consult me before taking the next step"
 - "aiexp" means "don't make any changes, just explain to me"
-- "aiplan" means "create a plan in .local/aitasks. consult me before coding"
+- "aiplan" means "create a plan in .local/aitasks. provide enough context and guidelines so the plan can be executed by another agent. consult me before coding"
 - "ainobk" means "don't worry about backward compatibility"
 - "aitt" means "use table driven style. use SetupTest, SetupSubTest, TearDownSubTest, TearDownTest. aiflw"
 - "aiprt" means "compare the current branch with main and suggest the proper PR title. follow the PR template in the repo (.github/pull_request_template.md) for the PR body. aishort"
@@ -53,5 +47,6 @@ All of the following shorthand communications should be strictly applied to the 
 - "aieval" means "evaluate the statement above and let me know what you think. don't make any changes"
 - "ainote" means "jot down notes of our conversation in ./local/ainotes. update the notes after each back and forth. write notes in .md and organize by discussion topic"
 - "aisub" means "use a sub-agent to do what i said"
+- "aiexec" means "execute on this plan. don't feel obligated to follow it blindly. use your best judgement and consult me if you are unsure"
 
 If I typed something like "aixxx" that you don't understand, ask
