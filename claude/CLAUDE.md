@@ -1,6 +1,3 @@
-## Known Environment Issues
-- When creating or pushing PRs with `gh` CLI and TLS certificate errors occur, immediately use `--no-verify` for git push or the appropriate insecure flag for `gh`. Do not suggest macOS keychain debugging or other root-cause investigations unless explicitly asked.
-
 ## Code References
 - When referencing code (explaining, discussing, or pointing to specific logic), always use clickable Markdown links with the fully qualified file path and line numbers
 - Format: `[file.go:42](file:///full/path/to/file.go:42)` or `[file.go:42-50](file:///full/path/to/file.go:42)` for ranges
